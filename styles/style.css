@@ -1,0 +1,12 @@
+.page {
+    font-family: Muli, 'Arial', sans-serif;
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #FCFCFD;
+    overflow: hidden;
+}
+
+.link {
+    color: #253757;
+    text-decoration: none;
+}

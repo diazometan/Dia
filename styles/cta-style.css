@@ -1,0 +1,57 @@
+.cta {
+    position: relative;
+    text-align: center;
+}
+
+.cta .shell {
+    animation: move-out 2s linear both;
+}
+
+.cta:hover .shell {
+    animation: move-in 2s linear both;
+}
+
+.cta__title {
+    margin: 160px 0px 57px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    color: #253757;
+    position: relative;
+    z-index: 2;
+}
+
+.cta__subtitle {
+    width: 754px;
+    margin: 0px auto 55px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #334563;
+    position: relative;
+    z-index: 2;
+}
+
+.cta__button {
+    margin-bottom: 256px;
+    width: 226px;
+    height: 56px;
+    background-color: #2F80ED;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.cta__button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}

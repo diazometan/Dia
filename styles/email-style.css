@@ -1,0 +1,33 @@
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #171717;
+    margin: 0px;
+}
+
+.email__input {
+    height: 50px;
+    background-color: #FCFCFD;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #E1E1E1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.4px;
+    line-height: 150%;
+    color: #152032;
+}
+
+.email__input:focus {
+    border-color: #00FF00;
+}

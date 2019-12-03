@@ -1,0 +1,38 @@
+.blue-square {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1575px;
+    height: 848px;
+    background: linear-gradient(115deg, #56CCF2 0% 78%, #FCFCFD 78% 100%);
+}
+
+.column-first {
+    position: absolute;
+    width: 1200px;
+    height: 298px;
+    left: 360px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+    opacity: 0.5;
+    transform: rotate(-65deg);
+}
+
+.column-second {
+    position: absolute;
+    width: 1128px;
+    height: 298px;
+    left: 700px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+    opacity: 0.5;
+    transform: rotate(-65deg);
+}
+
+.column-third {
+    position: absolute;
+    width: 956px;
+    height: 60px;
+    left: 1025px;
+    top: 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+    transform: rotate(-65deg);
+}

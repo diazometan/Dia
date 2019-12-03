@@ -1,0 +1,133 @@
+.steps {
+    box-sizing: border-box;
+    height: 816px;
+    margin: 0 64px;
+    padding-top: 160px;
+    padding-left: 163px;
+    display: flex;
+}
+
+.steps__process {
+    width: 362px;
+}
+
+.steps__cards-container {
+    display: flex;
+    width: 538px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+
+/* card */
+.card {
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.1);
+}
+
+.steps__card {
+    width: 240px;
+    height: 256px;
+    margin-bottom: 128px;
+    position: relative;
+}
+
+.steps__card:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 422px;
+    width: 16px;
+    background-color: gray;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    z-index: 0;
+    transition: transform 0.2s;
+}
+
+.steps__card:hover.steps__card:after {
+    transform: translate(-42%, -51%) rotate(25deg);
+}
+
+/* step-card */
+.step-card {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.step-card:before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    opacity: 0.15;
+    background-color: gray;
+}
+
+.step-card_theme_first:before,
+.steps__card_theme_first:after {
+    background-color: #56CCF2;
+}
+.step-card_theme_second:before,
+.steps__card_theme_second:after {
+    background-color: #FCC304;
+}
+.step-card_theme_third:before,
+.steps__card_theme_third:after {
+    background-color: #03D542;
+}
+.step-card_theme_forth:before,
+.steps__card_theme_forth:after {
+    background-color: #F25656;
+}
+
+.steps__card_theme_first,
+.steps__card_theme_third {
+    transform: translateY(110px);
+}
+
+.step-card__number_theme_first {
+    color: #56CCF2;
+}
+.step-card__number_theme_second {
+    color: #FCC304;
+}
+.step-card__number_theme_third {
+    color: #03D542;
+}
+.step-card__number_theme_forth {
+    color: #F25656;
+}
+
+.step-card__number {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 64px;
+    margin-bottom: 4px;
+}
+
+.step-card__text {
+    width: 176px;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+}

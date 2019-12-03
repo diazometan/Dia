@@ -1,0 +1,51 @@
+.button {
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.8s;
+    position: relative;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #FCC304;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.button_theme_blue {
+    background-color: #56CCF2;
+}
+
+.button_theme_blue-gradient {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
+                    rgba(255, 255, 255, 0) 100%), #56CCF2;
+}
+
+.button_text-color_common {
+    color: #FFFFFF;
+}
+
+.hire-up-button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.hire-up-button:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #FCC304;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.hire-up-button:hover.hire-up-button:after {
+    transform: scaleX(1);
+}

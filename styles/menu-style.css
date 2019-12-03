@@ -1,0 +1,40 @@
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    margin-right: 63px;
+}
+
+.menu__item_text_dark {
+    color: #253757;
+}
+
+.menu__item_text_white {
+    color: #FFFFFF;
+}
+
+.menu__item:last-child {
+    margin-right: 0px;
+}
+
+.menu__item:after {
+    display: block;
+    content: '';
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.menu__item_text_white:hover.menu__item_text_white:after {
+    border-bottom: solid 3px #FCC304;
+    transform: scaleX(1);
+}
+
+.menu__item_text_dark:hover.menu__item_text_dark:after {
+    border-bottom: solid 3px #3498db;
+    transform: scaleX(1);
+}
