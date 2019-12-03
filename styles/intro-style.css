@@ -67,7 +67,7 @@
 
 .intro__social-link:hover {
     background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
